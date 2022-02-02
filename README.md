@@ -19,8 +19,8 @@ Additionally, you can pass `--skip-backup` flag to bypass registry backup proces
 - Execute `.\AMD_Processor-Fastboot.Fix.bat --skip-backup` to run script without backing up Reg keys.
 
 ## What it fixes?
-- Fastboot.exe: `???????????????` on connected device list.
--> In some cases, this happens on executing `fastboot devices` command second time.
+- Fastboot.exe: `???????????????` on connected device list.\
+  ~ In some cases, this happens on executing `fastboot devices` command second time.
 
 - "Press any key to shutdown" showing at the top-left corner of the screen while in fastboot mode.
 - Mi Unlock tool: Device not connected!
