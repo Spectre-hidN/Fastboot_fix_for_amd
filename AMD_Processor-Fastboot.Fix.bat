@@ -19,7 +19,7 @@ if [%1] == [--skip-backup] (
 	timeout 2 >nul 2>&1
 	reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\usbflags\18D1D00D0100" /v "osvc" /t REG_BINARY /d "0000" /f >nul 2>&1
 	if %ERRORLEVEL% == 0 (
-		echo [38;5;82mSucessfully added 033[38;5;162m'osvc'033[38;5;82m Registry key![0m
+		echo [38;5;82mSucessfully added 033[38;5;162m'osvc'[38;5;82m Registry key![0m
 	) else (
 		echo [38;5;196mError occured while adding 'osvc' key! - Already present or Lack of permissions.[0m
 	)
