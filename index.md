@@ -1,37 +1,38 @@
-## Welcome to GitHub Pages
+<div align="center">
+<h1>Fastboot Fix for AMD Processors</h1>
+<strong><i>A bloat-less script to hack registry keys to detect xiaomi devices under fastboot mode on notorious AMD Processors.</i></strong>
+<br>
+<br>
+</div>
 
-You can use the [editor on GitHub](https://github.com/n00b-spectre/Fastboot_fix_for_amd/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+AMD Processors can't handle fastboot mode on Android devices having qualcomm chipset especially, on Xiaomi devices. This batch script will add certain registry keys to workaround with that problem (until AMD and Xiaomi roll out official patches for the drivers).
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+>I am not the one who discover this fix. An unknown developer from the great **Custom Rom** community is the one behind this magic. I had just automate this process for *newbies.*
 
-### Markdown
+### Usage
+- Downlaod the batch script from the release tab or clone this repo.
+- Right click the batch script and click on `Run As Administrator` to start the script
+- Press `[Enter]` to start patching registry keys... 
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Additionally, you can pass `--skip-backup` flag to bypass registry backup process.
+- Open Terminal/cmd on the same directory (Type `cmd` on the address bar of the file explorer)
+- Execute `.\AMD_Processor-Fastboot.Fix.bat --skip-backup` to run script without backing up Reg keys.
 
-```markdown
-Syntax highlighted code block
+## What it fixes?
+- Fastboot.exe: `???????????????` on connected device list.
+-> In some cases, this happens on executing `fastboot devices` command second time.
 
-# Header 1
-## Header 2
-### Header 3
+- "Press any key to shutdown" showing at the top-left corner of the screen while in fastboot mode.
+- Mi Unlock tool: Device not connected!
+- Fastboot.exe: Failed to download errors
+- Fastboot.exe: Waiting for the device...
 
-- Bulleted
-- List
+Literally, Anything related to fastboot.
 
-1. Numbered
-2. List
+\
+\
+\
+\
+[Visit Github repository](https://github.com/n00b-spectre/Fastboot_fix_for_amd/)
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/n00b-spectre/Fastboot_fix_for_amd/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+[View Profile](https://github.com/n00b-spectre)
