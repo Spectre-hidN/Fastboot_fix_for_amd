@@ -1,7 +1,7 @@
 @echo off
 
 echo [38;5;81mRegistry Hack to detect Xiaomi devices in fastboot mode on AMD series processors.[0m
-echo Make sure latest stable ADB and fastboot drivers are already installed. (Get it from here --^> https://shorturl.at/yHLW5)
+echo Make sure latest stable ADB and fastboot drivers are already installed. (Get it from here --^> https://bit.ly/3giKtZJ)
 echo [38;5;190mAdministravite Permissions required to modify registry![0m
 echo[
 echo [PRESS ENTER TO START]
