@@ -28,6 +28,3 @@ Additionally, you can pass `--skip-backup` flag to bypass registry backup proces
 - Fastboot.exe: Waiting for the device...
 
 Literally, Anything related to fastboot.
-
-## Share & Star
-If this script works for you then spare some seconds to share this to the needy and give it a star 🌟to make this reachable to other people...
