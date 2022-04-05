@@ -42,8 +42,8 @@ if [%1] == [--skip-backup] (
 	echo[
 	echo [38;5;135mBacking up usbflags registry key...[0m
 	timeout 2 >nul 2>&1
-	del %~dp0\usbflags_backup.reg >nul 2>&1
-	reg export HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\usbflags\ %~dp0\usbflags_backup.reg > nul
+	del "%~dp0\usbflags_backup.reg" >nul 2>&1
+	reg export HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\usbflags\ "%~dp0\usbflags_backup.reg" > nul
 	if %errorlevel% == 0 (
 		goto Add_reg
 	) else (
